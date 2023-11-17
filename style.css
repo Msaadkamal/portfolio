@@ -369,7 +369,7 @@ text-decoration: none;
  }
 
  /* //MediaQuary-Use */
- @media (max-width :1340px) {
+ @media (max-width :1000px) {
     .main{
         top: 20%;
 
