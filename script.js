@@ -39,7 +39,7 @@ const items=[
         id:6,
         title:" DashBoard",
         categary:"Bootstrap",
-        Img:"Image/Pic13.PNG",
+        Img:"Image/pic13.PNG",
         link:"https://github.com/Msaadkamal/Bootstrap-Project04"
     },
     {

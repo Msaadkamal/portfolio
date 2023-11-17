@@ -111,11 +111,10 @@ html{
 }
 #pic{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    padding: 0;
-    margin: 0;
+  
     
     
 }
@@ -123,7 +122,8 @@ html{
     flex-basis: 30%;
     height: 600px;
     border-radius: 4px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    display: block;
    
 }
 #intro{
@@ -369,12 +369,9 @@ text-decoration: none;
  }
 
  /* //MediaQuary-Use */
- @media (max-width :1000px) {
+ @media (max-width :1200px) {
     .main{
         top: 20%;
-
-
-
     }
     #home{
         display: flex;
@@ -394,6 +391,9 @@ text-decoration: none;
             margin-bottom: 10px;
            
             
+        }
+        #pic{
+            flex-wrap: wrap;
         }
         #pic img{
             flex-basis: 60%;
