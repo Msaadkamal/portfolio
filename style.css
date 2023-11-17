@@ -1,0 +1,458 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth; /* Allows a smooth animated "scroll effect" between elements within the scrolling box. */
+}
+/* navbar css*/
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky; /* An element with position: sticky; is positioned based on the user's scroll position. */
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.navbar ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+
+}
+.navbar ul li a{
+    text-decoration: none; /* In this it removes all the docration from text like underline, color */
+    color: white;
+    padding: 9px 25px;
+    transition: all .5s ease; /* specifies a transition effect with the same speed from start to end */
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+/* /////////CoverImageSection */
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 740px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('Image/Cover-Img.jpg') no-repeat center center /cover;
+    height: 800px;
+    width: 100%;
+    z-index: -10;                                 
+    opacity: .8;
+}
+.main{
+    display: flex;
+    flex-direction: column; /* The flexible items are displayed vertically, as a column */
+    align-items: center;
+    position: absolute; /* The element is positioned relative to its first positioned (not static) ancestor element */
+    top: 25%;  
+}
+.headings{
+    font-family: century;
+    font-size: 2.4rem;
+    text-align: center;
+    margin: 30px  0px;
+}
+.btn{
+    padding: 12px 37px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    transition: 0.6s ease;
+    text-decoration: none;
+    font-size: 1.9rem;
+
+}
+.btn span{
+    color: white;
+}
+.btn span:hover{
+    color: black;
+
+
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white, 0 0 10px white,0 0 15px white; /* Defining multiple shadows */
+    font-weight: bold;
+}
+/* About Section */
+#about{
+    width:87%;
+    margin: auto;
+    padding: 20px 0;
+    margin-bottom: 50px;
+    
+}
+#pic{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    
+    
+}
+#pic img{
+    flex-basis: 30%;
+    height: 600px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+   
+}
+#intro{
+    flex-basis: 60%;
+    text-align: justify;
+    padding: 10px  ;
+    margin-top:-260px ;
+    padding-left: 30px;
+}
+#intro h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+#intro p{
+    font-size: 22px;
+    /* font-family: 'Times New Roman'; */
+    letter-spacing: 0.2px;
+}
+  
+/* <!-- -- portfolio-Section -- -->  */
+.Manue-Head{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.buttona{
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    padding: .3vmax 1vmax;
+    font-size: 1.4vmax;
+    color:  #fff;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+
+/* ///////////////////////////////////////Portfolio-ItemSection///////////////////////////// */
+.Portf{
+    background: rgba(0, 0, 0, 0.9);
+
+}
+.Portf-Heading{
+    color: #fff;
+}
+.Portfolio{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+        padding-top: 50px;
+        text-transform: capitalize;
+        flex-wrap: wrap;
+        
+    }
+    .porFolio-Btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+.campus-col{
+
+    flex-basis: 290px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow:hidden ;
+    margin-left: 20px;
+    height: 260px;
+
+
+}
+.campus-col>img{
+    width: 100%;
+    height: 100%;
+    display: block;
+
+}
+.layer{
+    
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    transition: 0.5s;
+    text-transform: uppercase;
+   
+    
+}
+.layer:hover{
+    background-color:  rgba(0, 0, 0, 0.8);
+}
+.layer h3{
+    
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer h3> a{
+    text-decoration: none;
+    border:  1px solid gray;
+    color: gray;
+    padding: 4px 10px;
+
+
+
+}
+
+
+.layer:hover h3{
+    bottom: 35%;
+    opacity: 1;
+}
+
+/*/////////////////////// Less Button and more Button Cording/////////////////////////// */
+
+.load-more ,.load-less{
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    transition: 0.6s ease;
+    text-decoration: none;
+    margin: 10px;
+
+}
+.load-more:hover,.load-less:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white, 0 0 10px white,0 0 15px white; /* Defining multiple shadows */
+    font-weight: bold;
+}
+
+/* Scroll to Top */
+.to-top{
+    background-color: white;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #1f1f1f;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+.to-top.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+.to-top:hover{
+    background-color: black;
+    color: white;
+}
+
+/* //////////////footer//////////// */
+
+footer{
+    background: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    padding: 6vmin 5vmin;
+    
+ }
+ .Footer-Heading{
+    color: #fff;
+ }
+ .Footer-Heading i{
+    font-size: 3vmin;
+
+
+ }
+
+ .content-row{
+    padding: 8px 0;
+    text-align: center;
+ }
+ .content-row i{
+    font-size: 3vmin;
+
+
+
+ }
+
+ .contact  {
+    margin: 8px 0;
+ }
+ .contact a {
+    color: #fff;
+    font-size: 4vmin;
+    text-decoration: none;
+    margin: 7px 0;
+
+ }
+ .Email-Section{
+    margin: 10px 0;
+
+ }
+ .Email-Section a{
+color: #fff;
+text-decoration: none;
+ }
+ .Email-Section i{
+    font-size: 3.5vmin;
+ }
+ .icons{
+    text-align: center;
+    border: 2px solid red;  
+ }
+ .icons a{
+    color: #fff;
+    text-decoration: none;
+ }
+ .col-md-12 > p{
+    text-align: center;
+ }
+ .icons .fa {
+    background-color: #fff;
+    color: #fff;
+
+ }
+
+ /* //MediaQuary-Use */
+ @media (max-width :1340px) {
+    .main{
+        top: 20%;
+
+
+
+    }
+    #home{
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 480px;
+    }
+    #home::before{
+        height: 540px;
+        
+    }
+    
+    #about{
+        
+            width:100%;
+            padding: 5px;
+            margin-bottom: 10px;
+           
+            
+        }
+        #pic img{
+            flex-basis: 60%;
+            height: 420px;
+           
+           
+        }
+        #intro{
+            flex-basis: 90%;
+            text-align: start;
+            padding: 0px;
+            margin: 0;
+        }   
+        #intro h2{
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+        #intro p{
+            font-size: 18px;
+        }
+    }
+        @media (max-width:600px )   {
+            .main{
+                top: 7%;
+            }
+            #home{
+                height: 380px;
+            }
+            #home::before{
+                height: 440px;
+                
+            }
+           
+           
+
+
+
+        }
+       
+
+
+
+
+
+
+    
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
